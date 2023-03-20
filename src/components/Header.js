@@ -41,7 +41,7 @@ const Header = () => {
                   >
                     <img src={compare} alt='compare' />
                     <p className='mb-0'>
-                      Compare <br /> Products
+                      Ürünleri <br /> Karşılaştır
                     </p>
                   </Link>
                 </div>
@@ -52,7 +52,7 @@ const Header = () => {
                   >
                     <img src={wishlist} alt='wishlist' />
                     <p className='mb-0'>
-                      Favourite <br /> wishlist
+                      İstek Listen
                     </p>
                   </Link>
                 </div>
@@ -63,7 +63,7 @@ const Header = () => {
                   >
                     <img src={user} alt='user' />
                     <p className='mb-0'>
-                      Log in <br /> My Account
+                      Giriş Yap
                     </p>
                   </Link>
                 </div>
@@ -88,7 +88,7 @@ const Header = () => {
                     >
                       <img src={menu} alt='' />
                       <span className='me-5 d-inline-block'>
-                        Shop Categories
+                        Ürün Kategorileri
                       </span>
                     </button>
                     <ul
@@ -115,9 +115,8 @@ const Header = () => {
                 </div>
                 <div className='menu-links'>
                   <div className='d-flex align-items-center gap-15'>
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/product'>Our Store</NavLink>
-                    <NavLink to='/contact'>Contact</NavLink>
+                    <NavLink to='/'>Ana Sayfa</NavLink>
+                    <NavLink to='/product'>Ürünler</NavLink>
                   </div>
                 </div>
               </div>

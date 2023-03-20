@@ -2,7 +2,7 @@ import React from 'react'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai'
-import { BiPhoneCall, BiInfoCircle } from 'react-icons/bi'
+import { BiPhoneCall } from 'react-icons/bi'
 import Container from '../components/Container'
 
 const Contact = () => {
@@ -21,6 +21,7 @@ const Contact = () => {
               allowFullScreen=''
               loading='lazy'
               referrerPolicy='no-referrer-when-downgrade'
+              title='Contact Us'
             ></iframe>
           </div>
           <div className='col-12 mt-5'>
@@ -41,8 +42,8 @@ const Contact = () => {
                     </li>
                     <li className='mb-3 d-flex gap-15 align-items-center'>
                       <AiOutlineMail className='fs-5' />
-                      <a href='mailto:navdeepdahiya753@gmail.com'>
-                        burakhangulseven@gmail.com
+                      <a href='mailto:uygunaldim@musterihizmetleri.com'>
+                        uygunaldim@musterihizmetleri.com
                       </a>
                     </li>
                   </ul>

@@ -15,7 +15,7 @@ const OurStore = () => {
         <div className='row'>
           <div className='col-3'>
             <div className='filter-card mb-3'>
-              <h3 className='filter-title'>Shop By Categories</h3>
+              <h3 className='filter-title'>Kategorilere Göre Alışveriş</h3>
               <div>
                 <ul className='ps-0'>
                   <li>Watch</li>
@@ -26,7 +26,7 @@ const OurStore = () => {
               </div>
             </div>
             <div className='filter-card mb-3'>
-              <h3 className='filter-title'>Filter By</h3>
+              <h3 className='filter-title'>Şuna Göre Filtrele</h3>
               <div>
                 <h5 className='sub-title'>Availablity</h5>
                 <div>

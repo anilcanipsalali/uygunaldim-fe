@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from 'react-fast-marquee'
-import BlogCard from '../components/BlogCard'
 import ProductCard from '../components/ProductCard'
-import SpecialProduct from '../components/SpecialProduct'
 import Container from '../components/Container'
 
 const Home = () => {
@@ -92,7 +90,7 @@ const Home = () => {
       <Container class1='featured-wrapper py-5 home-wrapper-2'>
         <div className='row'>
           <div className='col-12'>
-            <h3 className='section-heading'>Featured Collection</h3>
+            <h3 className='section-heading'>Öne Çıkan Koleksiyon</h3>
           </div>
           <ProductCard />
           <ProductCard />
@@ -102,7 +100,7 @@ const Home = () => {
       <Container class1='popular-wrapper py-5 home-wrapper-2'>
         <div className='row'>
           <div className='col-12'>
-            <h3 className='section-heading'>6 ayın en ucuzları</h3>
+            <h3 className='section-heading'>6 Ayın En Ucuzları</h3>
           </div>
         </div>
         <div className='row'>

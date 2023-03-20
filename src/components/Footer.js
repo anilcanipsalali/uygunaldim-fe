@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from 'react-icons/bs'
-import newsletter from '../images/newsletter.png'
+import { BsGithub } from 'react-icons/bs'
+
 const Footer = () => {
   return (
     <>
@@ -9,10 +9,10 @@ const Footer = () => {
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-4'>
-              <h4 className='text-white mb-4'>Contact Us</h4>
+              <h4 className='text-white mb-4'>Bize Ulaşın</h4>
               <div>
                 <address className='text-white fs-6'>
-                  100.Yıl mahallesi <br />
+                  100.Yıl Mahallesi <br />
                   Ugur Mumcu Cad <br />B blok
                 </address>
                 <a
@@ -22,36 +22,36 @@ const Footer = () => {
                   +91 8264954234
                 </a>
                 <a
-                  href='mailto:burakhangulseven@gmail.com'
+                  href='mailto:uygunaldim@musterihizmetleri.com'
                   className='mt-2 d-block mb-0 text-white'
                 >
-                  burakhangulseven@gmail.com
+                  uygunaldim@musterihizmetleri.com
                 </a>
                 <div className='social_icons d-flex align-items-center gap-30 mt-4'>
-                  <a className='text-white' href='#'>
+                  <a className='text-white' href='https://github.com/anilcanipsalali'>
                     <BsGithub className='fs-4' />
                   </a>
                 </div>
               </div>
             </div>
             <div className='col-3'>
-              <h4 className='text-white mb-4'>Information</h4>
+              <h4 className='text-white mb-4'>Bilgi</h4>
               <div className='footer-link d-flex flex-column'>
                 <Link to='/privacy-policy' className='text-white py-2 mb-1'>
-                  Privacy Policy
+                  Gizlilik Politikası
                 </Link>
 
                 <Link to='/term-conditions' className='text-white py-2 mb-1'>
-                  Terms & Conditions
+                  Şartlar ve Koşullar
                 </Link>
               </div>
             </div>
             <div className='col-3'>
-              <h4 className='text-white mb-4'>Account</h4>
+              <h4 className='text-white mb-4'>Hesap</h4>
               <div className='footer-link d-flex flex-column'>
-                <Link className='text-white py-2 mb-1'>About Us</Link>
-                <Link className='text-white py-2 mb-1'>Faq</Link>
-                <Link className='text-white py-2 mb-1'>Contact</Link>
+                <Link className='text-white py-2 mb-1'>Hakkımızda</Link>
+                <Link className='text-white py-2 mb-1'>Sıkça Sorulan Sorular</Link>
+                <Link className='text-white py-2 mb-1'>İletişim</Link>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
           <div className='row'>
             <div className='col-12'>
               <p className='text-center mb-0 text-white'>
-                &copy; {new Date().getFullYear()}; uygunaldim
+                &copy; {new Date().getFullYear()} - uygunaldim
               </p>
             </div>
           </div>

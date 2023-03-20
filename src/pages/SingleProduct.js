@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ReactStars from 'react-rating-stars-component'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
@@ -6,29 +6,18 @@ import ProductCard from '../components/ProductCard'
 import ReactImageZoom from 'react-image-zoom'
 import { TbGitCompare } from 'react-icons/tb'
 import { AiOutlineHeart } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
-import watch from '../images/watch.jpg'
+
 import Container from '../components/Container'
+
 const SingleProduct = () => {
+
   const props = {
     width: 594,
     height: 600,
     zoomWidth: 600,
-
     img: 'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg',
   }
 
-  const [orderedProduct, setorderedProduct] = useState(true)
-  const copyToClipboard = (text) => {
-    console.log('text', text)
-    var textField = document.createElement('textarea')
-    textField.innerText = text
-    document.body.appendChild(textField)
-    textField.select()
-    document.execCommand('copy')
-    textField.remove()
-  }
-  const closeModal = () => {}
   return (
     <>
       <Meta title={'Product Name'} />
@@ -59,47 +48,38 @@ const SingleProduct = () => {
                     edit={false}
                     activeColor='#ffd700'
                   />
-                  <p className='mb-0 t-review'>( 2 Reviews )</p>
+                  <p className='mb-0 t-review'>( 2 Değerlendirme )</p>
                 </div>
                 <a className='review-btn' href='#review'>
-                  Write a Review
+                  Ürünü Değerlendir
                 </a>
               </div>
               <div className=' py-3'>
                 <div className='d-flex gap-10 align-items-center my-2'>
-                  <h3 className='product-heading'>Type :</h3>
-                  <p className='product-data'>Watch</p>
-                </div>
-                <div className='d-flex gap-10 align-items-center my-2'>
-                  <h3 className='product-heading'>Brand :</h3>
+                  <h3 className='product-heading'>Marka :</h3>
                   <p className='product-data'>Havells</p>
                 </div>
                 <div className='d-flex gap-10 align-items-center my-2'>
-                  <h3 className='product-heading'>Category :</h3>
+                  <h3 className='product-heading'>Kategori :</h3>
                   <p className='product-data'>Watch</p>
                 </div>
-                <div className='d-flex gap-10 align-items-center my-2'>
-                  <h3 className='product-heading'>Tags :</h3>
-                  <p className='product-data'>Watch</p>
-                </div>
-
                 <div className='d-flex align-items-center gap-15 flex-row mt-2 mb-3'>
-                  <div className='d-flex align-items-center gap-30 ms-5'>
+                  <div className='d-flex align-items-center'>
                     <button className='button signup'>
-                      Burakhanı satın al
+                      En Uygunu Al
                     </button>
                   </div>
                 </div>
                 <div className='d-flex align-items-center gap-15'>
                   <div>
-                    <a href=''>
-                      <TbGitCompare className='fs-5 me-2' /> Add to Compare
-                    </a>
+                    <span>
+                      <TbGitCompare className='fs-5 me-2' /> Karşılaştırmaya Ekle
+                    </span>
                   </div>
                   <div>
-                    <a href=''>
-                      <AiOutlineHeart className='fs-5 me-2' /> Add to Wishlist
-                    </a>
+                    <span>
+                      <AiOutlineHeart className='fs-5 me-2' /> İstek Listeme Ekle
+                    </span>
                   </div>
                 </div>
               </div>
@@ -110,7 +90,7 @@ const SingleProduct = () => {
       <Container class1='description-wrapper py-5 home-wrapper-2'>
         <div className='row'>
           <div className='col-12'>
-            <h4>Description</h4>
+            <h4>Ürün Hakkında</h4>
             <div className='bg-white p-3'>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -125,32 +105,10 @@ const SingleProduct = () => {
       <Container class1='reviews-wrapper home-wrapper-2'>
         <div className='row'>
           <div className='col-12'>
-            <h3 id='review'>Reviews</h3>
+            <h3 id='review'>Değerlendirmeler</h3>
             <div className='review-inner-wrapper'>
-              <div className='review-head d-flex justify-content-between align-items-end'>
-                <div>
-                  <h4 className='mb-2'>Customer Reviews</h4>
-                  <div className='d-flex align-items-center gap-10'>
-                    <ReactStars
-                      count={5}
-                      size={24}
-                      value={4}
-                      edit={false}
-                      activeColor='#ffd700'
-                    />
-                    <p className='mb-0'>Based on 2 Reviews</p>
-                  </div>
-                </div>
-                {orderedProduct && (
-                  <div>
-                    <a className='text-dark text-decoration-underline' href=''>
-                      Write a Review
-                    </a>
-                  </div>
-                )}
-              </div>
               <div className='review-form py-4'>
-                <h4>Write a Review</h4>
+                <h4>Ürünü Değerlendir</h4>
                 <form action='' className='d-flex flex-column gap-15'>
                   <div>
                     <ReactStars
@@ -168,18 +126,18 @@ const SingleProduct = () => {
                       className='w-100 form-control'
                       cols='30'
                       rows='4'
-                      placeholder='Comments'
+                      placeholder='Değerlendirmeniz'
                     ></textarea>
                   </div>
                   <div className='d-flex justify-content-end'>
-                    <button className='button border-0'>Submit Review</button>
+                    <button className='button border-0'>Paylaş</button>
                   </div>
                 </form>
               </div>
               <div className='reviews mt-4'>
                 <div className='review'>
                   <div className='d-flex gap-10 align-items-center'>
-                    <h6 className='mb-0'>Navdeep</h6>
+                    <h6 className='mb-0'>anilcanipsalali</h6>
                     <ReactStars
                       count={5}
                       size={24}
@@ -204,68 +162,13 @@ const SingleProduct = () => {
       <Container class1='popular-wrapper py-5 home-wrapper-2'>
         <div className='row'>
           <div className='col-12'>
-            <h3 className='section-heading'>6 Ayın en ucuzu</h3>
+            <h3 className='section-heading'>6 Ayın En Ucuzu</h3>
           </div>
         </div>
         <div className='row'>
           <ProductCard />
         </div>
       </Container>
-
-      <div
-        className='modal fade'
-        id='staticBackdrop'
-        data-bs-backdrop='static'
-        data-bs-keyboard='false'
-        tabindex='-1'
-        aria-labelledby='staticBackdropLabel'
-        aria-hidden='true'
-      >
-        <div className='modal-dialog modal-dialog-centered '>
-          <div className='modal-content'>
-            <div className='modal-header py-0 border-0'>
-              <button
-                type='button'
-                className='btn-close'
-                data-bs-dismiss='modal'
-                aria-label='Close'
-              ></button>
-            </div>
-            <div className='modal-body py-0'>
-              <div className='d-flex align-items-center'>
-                <div className='flex-grow-1 w-50'>
-                  <img src={watch} className='img-fluid' alt='product imgae' />
-                </div>
-                <div className='d-flex flex-column flex-grow-1 w-50'>
-                  <h6 className='mb-3'>Apple Watch</h6>
-                  <p className='mb-1'>Quantity: asgfd</p>
-                  <p className='mb-1'>Color: asgfd</p>
-                  <p className='mb-1'>Size: asgfd</p>
-                </div>
-              </div>
-            </div>
-            <div className='modal-footer border-0 py-0 justify-content-center gap-30'>
-              <button type='button' className='button' data-bs-dismiss='modal'>
-                View My Cart
-              </button>
-              <button type='button' className='button signup'>
-                Checkout
-              </button>
-            </div>
-            <div className='d-flex justify-content-center py-3'>
-              <Link
-                className='text-dark'
-                to='/product'
-                onClick={() => {
-                  closeModal()
-                }}
-              >
-                Continue To Shopping
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   )
 }
