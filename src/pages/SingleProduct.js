@@ -87,21 +87,6 @@ const SingleProduct = () => {
           </div>
         </div>
       </Container>
-      <Container class1='description-wrapper py-5 home-wrapper-2'>
-        <div className='row'>
-          <div className='col-12'>
-            <h4>Ürün Hakkında</h4>
-            <div className='bg-white p-3'>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tenetur nisi similique illum aut perferendis voluptas, quisquam
-                obcaecati qui nobis officia. Voluptatibus in harum deleniti
-                labore maxime officia esse eos? Repellat?
-              </p>
-            </div>
-          </div>
-        </div>
-      </Container>
       <Container class1='reviews-wrapper home-wrapper-2'>
         <div className='row'>
           <div className='col-12'>
