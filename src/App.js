@@ -9,8 +9,8 @@ import OurStore from './pages/OurStore'
 import CompareProduct from './pages/CompareProduct'
 import Wishlist from './pages/Wishlist'
 import Login from './pages/Login'
-import Forgotpassword from './pages/Forgotpassword'
-import Signup from './pages/Signup'
+import ForgotPassword from './pages/ForgotPassword'
+import SignUp from './pages/SignUp'
 import Resetpassword from './pages/Resetpassword'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermAndContions from './pages/TermAndContions'
@@ -30,8 +30,8 @@ function App() {
             <Route path='compare-product' element={<CompareProduct />} />
             <Route path='wishlist' element={<Wishlist />} />
             <Route path='login' element={<Login />} />
-            <Route path='forgot-password' element={<Forgotpassword />} />
-            <Route path='signup' element={<Signup />} />
+            <Route path='forgot-password' element={<ForgotPassword />} />
+            <Route path='signup' element={<SignUp />} />
             <Route path='reset-password' element={<Resetpassword />} />
             <Route path='privacy-policy' element={<PrivacyPolicy />} />
             <Route path='term-conditions' element={<TermAndContions />} />

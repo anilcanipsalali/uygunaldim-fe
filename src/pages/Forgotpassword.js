@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
 
-const Forgotpassword = () => {
+const ForgotPassword = () => {
   return (
     <>
       <Meta title={"Forgot Password"} />
@@ -19,7 +19,7 @@ const Forgotpassword = () => {
               Parolanızı sıfırlamak için size bir e-posta göndereceğiz.
               </p>
               <form action="" className="d-flex flex-column gap-15">
-                <CustomInput type="email" name="email" placeholder="Email" />
+                <CustomInput type="email" name="email" placeholder="E-posta" />
 
                 <div>
                   <div className="mt-3 d-flex justify-content-center flex-column gap-15 align-items-center">
@@ -38,4 +38,4 @@ const Forgotpassword = () => {
   );
 };
 
-export default Forgotpassword;
+export default ForgotPassword;

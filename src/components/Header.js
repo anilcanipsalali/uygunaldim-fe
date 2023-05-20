@@ -23,8 +23,8 @@ const Header = () => {
                 <input
                   type='text'
                   className='form-control py-2'
-                  placeholder='Search Product Here...'
-                  aria-label='Search Product Here...'
+                  placeholder='Ürün Ara...'
+                  aria-label='Ürün Ara...'
                   aria-describedby='basic-addon2'
                 />
                 <span className='input-group-text p-3' id='basic-addon2'>

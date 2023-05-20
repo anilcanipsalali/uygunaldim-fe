@@ -6,6 +6,11 @@ import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
 
 const Login = () => {
+
+  const handleSubmit = (form) => {
+    console.log(form.value);
+  }
+  
   return (
     <>
       <Meta title={"Giriş Yap"} />
@@ -15,16 +20,11 @@ const Login = () => {
           <div className="col-12">
             <div className="auth-card">
               <h3 className="text-center mb-3">Giriş Yap</h3>
-              <form action="" className="d-flex flex-column gap-15">
-                <CustomInput type="email" name="email" placeholder="Email" />
-                <CustomInput
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                />
+              <form onSubmit={(form) => handleSubmit(form)} className="d-flex flex-column gap-15">
+                <CustomInput type="text" name="username" placeholder="Kullanıcı Adı" />
+                <CustomInput type="password" name="password" placeholder="Şifre" />
                 <div>
                   <Link to="/forgot-password">Parolanızı mı unuttunuz?</Link>
-
                   <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
                     <button className="button border-0" type="submit">
                       Giriş Yap
