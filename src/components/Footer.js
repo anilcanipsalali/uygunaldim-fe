@@ -12,8 +12,10 @@ const Footer = () => {
               <h4 className='text-white mb-4'>Bize Ulaşın</h4>
               <div>
                 <address className='text-white fs-6'>
-                  100.Yıl Mahallesi <br />
-                  Ugur Mumcu Cad <br />B blok
+                Üsküdar Üniversitesi Merkez Yerleşke <br />
+                Altunizade, Üniversite Sok. <br />
+                No:14, 34662 <br/>
+                Üsküdar/İstanbul
                 </address>
                 <a
                   href='tel:+91 8264954234'
