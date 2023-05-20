@@ -66,7 +66,7 @@ const SingleProduct = () => {
                 <div className='d-flex align-items-center gap-15 flex-row mt-2 mb-3'>
                   <div className='d-flex align-items-center'>
                     <button className='button signup'>
-                      En Uygunu Al
+                      En Uygun Ürüne Git
                     </button>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const SingleProduct = () => {
                   </div>
                   <div>
                     <span>
-                      <AiOutlineHeart className='fs-5 me-2' /> İstek Listeme Ekle
+                      <AiOutlineHeart className='fs-5 me-2' /> Takip Listeme Ekle
                     </span>
                   </div>
                 </div>

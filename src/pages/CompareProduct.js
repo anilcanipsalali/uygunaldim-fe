@@ -1,37 +1,37 @@
-import React from 'react'
-import BreadCrumb from '../components/BreadCrumb'
+import React from "react";
+import BreadCrumb from "../components/BreadCrumb";
 
-import Meta from '../components/Meta'
-import Container from '../components/Container'
+import Meta from "../components/Meta";
+import Container from "../components/Container";
 
 const CompareProduct = () => {
   return (
     <>
-      <Meta title={'Compare Products'} />
-      <BreadCrumb title='Compare Products' />
-      <Container class1='compare-product-wrapper py-5 home-wrapper-2'>
-        <div className='row'>
-          <div className='col-3'>
-            <div className='compare-product-card position-relative'>
+      <Meta title={"Ürünleri Karşılaştır"} />
+      <BreadCrumb title="Ürünleri Karşılaştır" />
+      <Container class1="compare-product-wrapper py-5 home-wrapper-2">
+        <div className="row">
+          <div className="col-3">
+            <div className="compare-product-card position-relative">
               <img
-                src='images/cross.svg'
-                alt='cross'
-                className='position-absolute cross img-fluid'
+                src="images/cross.svg"
+                alt="cross"
+                className="position-absolute cross img-fluid"
               />
-              <div className='product-card-image'>
-                <img src='images/watch.jpg' alt='watch' />
+              <div className="product-card-image">
+                <img src="images/watch.jpg" alt="watch" />
               </div>
-              <div className='compare-product-details'>
-                <h5 className='title'>
+              <div className="compare-product-details">
+                <h5 className="title">
                   Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
                 </h5>
-                <h6 className='price mb-3 mt-3'>$ 100</h6>
+                <h6 className="price mb-3 mt-3">$ 100</h6>
                 <div>
-                  <div className='product-detail'>
+                  <div className="product-detail">
                     <h5>Marka:</h5>
                     <p>Havels</p>
                   </div>
-                  <div className='product-detail'>
+                  <div className="product-detail">
                     <h5>Kategori:</h5>
                     <p>Watch</p>
                   </div>
@@ -42,7 +42,7 @@ const CompareProduct = () => {
         </div>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default CompareProduct
+export default CompareProduct;

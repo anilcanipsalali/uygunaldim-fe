@@ -576,6 +576,18 @@ footer .input-group-text {
   background-color: var(--color-131921);
   color: white;
 }
+
+.error {
+  border-color: #ff0000 !important;
+}
+
+.error-explanation {
+  color: #ff0000;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
 /*  auth card  ends*/
 
 /* Policy Pages */
