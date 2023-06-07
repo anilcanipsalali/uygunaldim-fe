@@ -21,7 +21,7 @@ const Footer = () => {
                   href='tel:+91 8264954234'
                   className='mt-3 d-block mb-1 text-white'
                 >
-                  +91 8264954234
+                  +90 534 424 49 92
                 </a>
                 <a
                   href='mailto:uygunaldim@musterihizmetleri.com'
