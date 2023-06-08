@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BsSearch } from "react-icons/bs";
 import user from "../images/user.svg";
 import { validateToken } from "../services/AuthService";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Search from "antd/es/input/Search";
 
 const Header = () => {
   const [hasAuthorized, setHasAuthorized] = useState(false);
@@ -38,15 +36,7 @@ const Header = () => {
                 </Link>
               </h2>
             </div>
-            <div className="col-5">
-                <Search
-                  type="text"
-                  placeholder="Ürün Ara..."
-                  size="large"
-                  allowClear
-                />
-            </div>
-            <div className="col-5">
+            <div className="col-10">
               <div className="header-upper-links d-flex justify-content-end">
                 {hasAuthorized ? (
                   <Link>

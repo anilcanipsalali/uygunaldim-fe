@@ -5,12 +5,13 @@ import Container from '../components/Container'
 import { useEffect } from 'react'
 import { getCategories, getProducts } from '../services/ProductService'
 import { toast } from 'react-toastify'
-import { Pagination } from 'antd'
+import { Input, Pagination } from 'antd'
 
 const Store = () => {
   const [grid, setGrid] = useState(4)
   const [categories, setCategories] = useState([]);
   const [searchCategory, setSearchCategory] = useState(null);
+  const [searchProduct, setSearchProduct] = useState("");
   const [products, setProducts] = useState([]);
   const [pageSize, setPageSize] = useState(12);
   const [productsCount, setProductsCount] = useState(30);
@@ -23,7 +24,7 @@ const Store = () => {
   }
 
   const setAllProducts = async () => {
-    await getProducts(currentPage-1, pageSize, searchCategory, minPrice, maxPrice, toast).then((e) => {
+    await getProducts(currentPage-1, pageSize, searchCategory, searchProduct, minPrice, maxPrice, toast).then((e) => {
       setProducts(e.data.content);
       setProductsCount(e.data.totalElements)
     })
@@ -35,7 +36,7 @@ const Store = () => {
 
   useEffect(() => {
     setAllProducts();
-  }, [currentPage, categories, searchCategory, minPrice, maxPrice])
+  }, [currentPage, categories, searchCategory, minPrice, maxPrice, searchProduct])
 
   return (
     <>
@@ -86,9 +87,12 @@ const Store = () => {
           </div>
           <div className='col-9'>
             <div className='filter-sort-grid mb-4'>
-              <div className='d-flex justify-content-end'>
-                <div className='d-flex align-items-center gap-10'>
-                  <p className='totalproducts mb-0'>{productsCount} Products</p>
+              <div className='d-flex justify-content-sm-between'>
+                <div className='pt-1'>
+                  <Input placeholder="Ürün Ara.." allowClear onChange={(e) => setSearchProduct(e.target.value)} />
+                </div>
+                <div className='d-flex justify-content-end gap-10'>
+                  <p className='totalproducts mb-0 p-2'>{productsCount} Ürün</p>
                   <div className='d-flex gap-10 align-items-center grid'>
                     <img
                       onClick={() => {
