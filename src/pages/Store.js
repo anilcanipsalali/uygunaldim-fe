@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState } from 'react'
 import Meta from '../components/Meta'
 import ProductCard from '../components/ProductCard'
@@ -6,6 +7,11 @@ import { useEffect } from 'react'
 import { getCategories, getProducts } from '../services/ProductService'
 import { toast } from 'react-toastify'
 import { Input, Pagination } from 'antd'
+import { SearchOutlined } from '@ant-design/icons';
+import gr from '../images/gr.svg'
+import gr2 from '../images/gr2.svg'
+import gr3 from '../images/gr3.svg'
+import gr4 from '../images/gr4.svg'
 
 const Store = () => {
   const [grid, setGrid] = useState(4)
@@ -13,7 +19,7 @@ const Store = () => {
   const [searchCategory, setSearchCategory] = useState(null);
   const [searchProduct, setSearchProduct] = useState("");
   const [products, setProducts] = useState([]);
-  const [pageSize, setPageSize] = useState(12);
+  const pageSize = 12;
   const [productsCount, setProductsCount] = useState(30);
   const [currentPage, setCurrentPage] = useState(1);
   const [minPrice, setMinPrice] = useState(null);
@@ -89,7 +95,7 @@ const Store = () => {
             <div className='filter-sort-grid mb-4'>
               <div className='d-flex justify-content-sm-between'>
                 <div className='pt-1'>
-                  <Input placeholder="Ürün Ara.." allowClear onChange={(e) => setSearchProduct(e.target.value)} />
+                  <Input prefix={<SearchOutlined />} placeholder="Ürün Ara.." allowClear onChange={(e) => setSearchProduct(e.target.value)} />
                 </div>
                 <div className='d-flex justify-content-end gap-10'>
                   <p className='totalproducts mb-0 p-2'>{productsCount} Ürün</p>
@@ -98,7 +104,7 @@ const Store = () => {
                       onClick={() => {
                         setGrid(3)
                       }}
-                      src='images/gr4.svg'
+                      src={gr4}
                       className='d-block img-fluid'
                       alt='grid'
                     />
@@ -106,7 +112,7 @@ const Store = () => {
                       onClick={() => {
                         setGrid(4)
                       }}
-                      src='images/gr3.svg'
+                      src={gr3}
                       className='d-block img-fluid'
                       alt='grid'
                     />
@@ -114,7 +120,7 @@ const Store = () => {
                       onClick={() => {
                         setGrid(6)
                       }}
-                      src='images/gr2.svg'
+                      src={gr2}
                       className='d-block img-fluid'
                       alt='grid'
                     />
@@ -123,7 +129,7 @@ const Store = () => {
                       onClick={() => {
                         setGrid(12)
                       }}
-                      src='images/gr.svg'
+                      src={gr}
                       className='d-block img-fluid'
                       alt='grid'
                     />
